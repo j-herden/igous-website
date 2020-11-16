@@ -10,6 +10,15 @@
         <title lang="de">Standard</title>
     </meta>
 
+    <areas>
+        <area key="area_footer">
+            <meta>
+                <title lang="en">footer</title>
+                <title lang="de">Fusszeile</title>
+            </meta>
+        </area>
+    </areas>
+
     <properties>
         <property name="title" type="text_line" mandatory="true">
             <meta>

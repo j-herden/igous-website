@@ -1,0 +1,6 @@
+
+
+{# {% set snippet = sulu_snippet_load('087d1875-0be1-4b9f-91ce-27389a0ae037') %} #}
+{% set snippet = sulu_snippet_load_by_area('area_footer') %}
+{# {% dump(snippet) %} #}
+{{ snippet.content.description|raw }}

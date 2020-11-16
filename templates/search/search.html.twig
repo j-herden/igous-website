@@ -1,7 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block content %}
-    <h2>Showing {{ hits|length }} results for "{{ query }}"</h2>
+    <h2>Zeige {{ hits|length }} Treffer für "{{ query }}"</h2>
 
     <ul>
         {% for i, hit in hits %}
