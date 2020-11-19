@@ -196,6 +196,9 @@
             "config/packages/prod/jms_serializer.yaml"
         ]
     },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.1.1"
+    },
     "layershifter/tld-database": {
         "version": "1.0.69"
     },
@@ -227,7 +230,7 @@
         "version": "v2.4.1"
     },
     "php": {
-        "version": "7.2"
+        "version": "7.4"
     },
     "php-http/client-common": {
         "version": "2.3.0"
@@ -657,6 +660,9 @@
     },
     "twig/twig": {
         "version": "v3.1.1"
+    },
+    "webimpress/safe-writer": {
+        "version": "2.1.0"
     },
     "willdurand/jsonp-callback-validator": {
         "version": "v1.1.0"
