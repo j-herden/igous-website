@@ -1,6 +1,18 @@
 
 {# {% dump(content) %} #}
 
-{{ content.fullName}} <br/>
-{{ content.mainAddress.street}} {{content.mainAddress.number}} <br/>
-{{ content.mainAddress.zip}} {{content.mainAddress.city}} <br/>
+<div class="addresseContainer">
+    {{ content.fullName}} <br/>
+    {% if content.mainAddress %}
+        {% set address = content.mainAddress %}
+    {% elseif content.addresses %}
+        {% set address = content.addresses[0] %}
+    {% else %}
+        {% set address = null %}
+    {% endif %}
+
+    {% if address %}
+        {{ address.street}} {{address.number}} <br/>
+        {{ address.zip}} {{address.city}} <br/>
+    {% endif %}
+</div>
