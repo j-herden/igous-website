@@ -199,15 +199,6 @@
     "laminas/laminas-zendframework-bridge": {
         "version": "1.1.1"
     },
-    "layershifter/tld-database": {
-        "version": "1.0.69"
-    },
-    "layershifter/tld-extract": {
-        "version": "2.0.1"
-    },
-    "layershifter/tld-support": {
-        "version": "1.1.1"
-    },
     "massive/build-bundle": {
         "version": "0.5.2"
     },
@@ -264,6 +255,9 @@
     },
     "phpcr/phpcr-utils": {
         "version": "1.5.1"
+    },
+    "phpstan/phpdoc-parser": {
+        "version": "0.4.10"
     },
     "piwik/device-detector": {
         "version": "3.13.1"
@@ -663,6 +657,9 @@
     },
     "webimpress/safe-writer": {
         "version": "2.1.0"
+    },
+    "webmozart/assert": {
+        "version": "1.9.1"
     },
     "willdurand/jsonp-callback-validator": {
         "version": "v1.1.0"

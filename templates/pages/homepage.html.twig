@@ -6,8 +6,9 @@
 {% block content %}
     {% set image = content.image %}
     {# <img src="{{ image.url }}" alt="{{ image.title }}" title="{{ image.description|default(image.title) }}"> #}
-    <img src="{{ image.thumbnails['sulu-400x400'] }}" alt="{{ image.title }}" title="{{ image.description|default(image.title) }}">
-    
+    {% if image %}
+        <img src="{{ image.thumbnails['sulu-400x400'] }}" alt="{{ image.title }}" title="{{ image.description|default(image.title) }}">
+    {% endif %}
     <h1>{{ content.title }}</h1>
 
     {{ content.article|raw }}

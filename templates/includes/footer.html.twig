@@ -1,6 +1,13 @@
 
 
-{# {% set snippet = sulu_snippet_load('087d1875-0be1-4b9f-91ce-27389a0ae037') %} #}
-{% set snippet = sulu_snippet_load_by_area('area_footer') %}
+{# {% set snippet = sulu_snippet_load_by_area('area_footer') %} #}
 {# {% dump(snippet) %} #}
-{{ snippet.content.description|raw }}
+{# {{ snippet.content.description|raw }} #}
+
+{% for item in sulu_navigation_root_flat('footer') %}
+    <a href="{{ sulu_content_path(item.url) }}">{{ item.title }}</a>
+
+    {% if not loop.last %}&nbsp;|&nbsp;{% endif %}
+{% endfor %}
+
+<span class="text-muted float-right">Copyright {{ 'now'|date('Y') }} Jens Herden</span>
